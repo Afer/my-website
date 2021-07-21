@@ -1,0 +1,218 @@
+
+/* main outline */
+#masterPopupContainer{
+	position: absolute;
+	z-index: 1000;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.masterPopupContent{
+	position: relative;
+	width: 80%;
+	background-color: white;
+	border: 3px solid grey;
+	margin: 50px auto 0;
+	text-align: center;
+	box-sizing: border-box;
+	/* overflow: hidden; */
+	font-family: AD;
+	/* max-height: 400px; */
+	font-size: 20px;
+	/* background-image: url('../images/screen_backgrounds/bareBack.png'); */
+	background-size: 100% 100%;
+	display: flex;
+	flex-directioN: column;
+	box-sizing: border-box;
+	background-image: url('../images/screen_backgrounds/popup-bg2.png');
+	border-radius: 5px;
+	box-shadow: 8px 8px 18px black;
+	background-image: url(../images/screen_backgrounds/itemBack.png);
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	padding: 14px 10px 25px;
+	color: black;
+	text-transform: uppercase;
+	/* padding-top: 14px; */
+	padding-bottom: 10%;
+}
+
+.popupContent {
+	/* padding: 0 20px 20px; */
+	width: 100%;
+	box-sizing: border-box;
+	float: none;
+	/* color: #ddd; */
+	z-index: 100;
+}
+
+.popupTitleContainer img {
+	width: 100%;
+	position: absolute;
+	left: 0px;
+    z-index: 0;
+}
+
+.popupContent img {
+	width: 100%;
+}
+
+.popupTitle {
+	position: relative;
+	z-index: 2;
+	font-size: 20px;
+	padding: 0 20px;
+	/* font-weight: bold; */
+	top: -20px;
+}
+
+/* buttons */
+
+.statusButton{
+	background-color: deepskyblue;
+	border-radius: 10px;
+	width: 80%;
+	height: 50px;
+	line-height: 50px;
+	margin: 20px auto;
+	box-sizing: border-box;
+}
+
+.statusButton.alreadyFavorite{
+	color: green;
+	border: 2px solid green;
+	font-weight: bold;
+}
+
+.tinkerMenuItem{
+	/* border-bottom: 1px solid black; */
+	/* padding: 5px 10px; */
+	/* text-align: center; */
+	width: 87%;
+	height: auto !important;
+	box-sizing: border-box;
+	/* margin-top: 20px !important; */
+	font-size: 14px !important;
+	margin: 5px auto;
+}
+
+.tinkerMenuItem:first-child {
+	/* margin-top: 0; */
+}
+
+.popupIcon {
+	width: 25%;
+    height: 50px;
+    margin: 0 auto;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.popupButtons {
+	display: flex;
+	margin: 40px 0;
+	justify-content: center;
+}
+
+.popupButtons .menuButton{
+	/* padding: 0 10px; */
+}
+
+.popupButtons .hidden {
+	display: none;
+}
+
+.popupTransContainer {
+	backface-visibility: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top:  0;
+	margin:  0;
+	padding:  0;
+	transition: 0.7s;
+}
+
+.transBack {
+	transform: rotateY(180deg) scale(0.5);
+}
+
+.popupTransContainer.rotateFront {
+	transform: rotateY(180deg) scale(0.2);
+}
+
+.popupTransContainer.rotateBack {
+	transform: rotateY(360deg) scale(1);
+}
+
+.masterPopupControls {
+	/* padding: 0 40px; */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	padding:  0 20px;
+	/* flex-shrink: 5; */
+	/* flex-grow: 3; */
+	/* font-size: 12px; */
+}
+
+.masterPopupControls div {
+	min-width: 80px;
+	float: none;
+	margin: 20px auto;
+	font-size: 14px;
+	/* display: flex; */
+}
+
+/*#masterPopupContainer.ultraFull {
+	width: 200%;
+	height: 200%;
+	left: -50%;
+	top: -50%;
+}
+
+.ultraFull .masterPopupContent {
+	height: 3000px;
+}
+
+.ultraFull .popupContent {
+	top: 15%;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+}*/
+
+/*
+@keyframes rotateMain {
+	from {
+		transform: rotateY(0deg) scale(1);
+	}
+
+	to {
+		transform: rotateY(180deg) scale(0.2);
+	}
+}
+
+@keyframes rotateBack {
+	from {
+		transform: rotateY(180deg) scale(0.2);
+	}
+
+	to {
+		transform: rotateY(360deg) scale(1);
+	}
+}
+
+.rotateMain {
+	animation: rotateMain 1s ease;
+}
+
+.rotateBack {
+	animation: rotateBack 1s ease;
+}*/

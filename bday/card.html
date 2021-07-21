@@ -1,0 +1,88 @@
+<html>
+    <head>
+		<meta name='viewport' content='width = device-width, initial-scale=1, maximum-scale=1' />
+
+		<script type="text/javascript" src="script/jquery9.js"></script>
+		<script type="text/javascript" src="script/bday.js"></script>
+		<script type="text/javascript" src="script/popup.js"></script>
+
+		<link type="text/css" href="css/bday.css" rel="stylesheet"></link>
+		<link type="text/css" href="css/popup.css" rel="stylesheet"></link>
+    </head>
+
+    <body>
+        <div id='bdayContainer' class='shakeit'>
+            <div id='bdayEnvelopeContainer'>
+                <div class='envelopeBackground'></div>
+                <div class='envelopeForeground'>Click Me!</div>
+            </div>
+
+            <div class="bdayCard">
+                <div class='card-front'></div>
+                <div class='card-inside-front'></div>
+                <div class='card-inside-back'>
+					Happy Birthday!
+					<br/>
+					I miss you!
+				</div>
+            </div>
+        </div>
+
+        <div id='masterPopupContainer'>
+			<div id='masterPopupOverlay' class='mapPopupOverlay popupSpreadOverlay'></div>
+			<div id='masterPopupContentContainer' class='popupSpread'>
+				<div class='popupTransContainer transBack'>
+					<div class="masterPopupContent">
+						<div class="iconButton back popupBack event-button" data-callback="popup.backFromTransition();"></div>
+						<div class='popupTitleContainer'>
+							<div class='popupTitle'>
+								<svg viewBox="0 0 250 50" d="">
+									<path fill="none" d="M 0,60 Q 125,0 250,60" id="curve1"></path>
+									<text width="250" text-anchor="middle" x="130" stroke="#FFF">
+										<textPath xlink:href="#curve1"></textPath>
+									</text>
+								</svg>
+							</div>
+							<div class="popupTitleEffects">
+								<div class="popupTitleEffect-Ribbon">
+									<img src="images/screen_backgrounds/ribbon.png" />
+								</div>
+							</div>
+						</div>
+						<div class="popupContent"></div>
+						<div class='masterPopupControls'>
+							<div id='transBackNo' class='menuButton icon event-button' data-callback='popup.backFromTransition();'>NO</div>
+							<div id='transBackYes' class='menuButton main event-button'>YES</div>
+						</div>
+					</div>
+				</div>
+
+				<div class='popupTransContainer transFront'>
+					<div id='masterPopupContent' class="masterPopupContent">
+						<div class="iconButton back popupBack event-button" data-callback="popup.hide();"></div>
+						<div class='popupTitleContainer'>
+							<div class='popupTitle'>
+								<svg viewBox="0 0 250 50" d="">
+									<path fill="none" d="M 0,60 Q 125,0 250,60" id="curve2"></path>
+									<text width="250" text-anchor="middle" x="130" stroke="#FFF">
+										<textPath xlink:href="#curve2"></textPath>
+									</text>
+								</svg>
+							</div>
+							<div class="popupTitleEffects">
+								<div class="popupTitleEffect-Ribbon">
+									<img src="images/screen_backgrounds/ribbon.png" />
+								</div>
+							</div>
+						</div>
+						<div id='popupContent' class="popupContent"></div>
+						<div id='masterPopupControls' class='masterPopupControls'>
+							<div id="masterPopupNo" class='menuButton icon event-button' data-callback='popup.hide();'>NO</div>
+							<div id="masterPopupYes" class='menuButton main event-button'>YES</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>
