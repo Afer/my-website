@@ -57,7 +57,7 @@ div.bdayCard.permanentOut.hideClick::after {
 }
 
 .card-front {
-    background-image: url(../images/steevie_front.png);
+    background-image: url(../images/prison_mike_outside_text.png);
     z-index: 5;
 }
 
