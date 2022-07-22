@@ -57,7 +57,7 @@ div.bdayCard.permanentOut.hideClick::after {
 }
 
 .card-front {
-    background-image: url(../images/dad_review_outside.png);
+    background-image: url(../images/tested-positive.png);
     z-index: 5;
 }
 
