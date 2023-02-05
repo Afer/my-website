@@ -66,7 +66,11 @@ div.bdayCard.permanentOut.hideClick::after {
 }
 
 .card-front {
+<<<<<<< HEAD
     background-image: url(../images/sexy.png);
+=======
+    background-image: url(../images/tested-positive.png);
+>>>>>>> 9b75cb8122572593f29279d0f3c1dfdd580185b4
     z-index: 5;
 }
 
