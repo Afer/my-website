@@ -26,6 +26,15 @@ div.bdayCard {
     left: calc(calc(100% - 300px)/2);
 }
 
+div.bdayCard.sexy {
+    width: 560px;
+    transform: translate(-129px,-15px) scale(0.2) rotate(90deg);
+}
+
+div.bdayCard.sexy.permanentOut {
+    transform: translate(-120px, 10%) rotate(0deg) scale(1);
+}
+
 div.bdayCard.permanentOut {
     transform: translate(0, 10%) rotate(0deg) scale(1);
     z-index: 10;
@@ -57,7 +66,7 @@ div.bdayCard.permanentOut.hideClick::after {
 }
 
 .card-front {
-    background-image: url(../images/prison_mike_outside_text.png);
+    background-image: url(../images/sexy.png);
     z-index: 5;
 }
 
@@ -144,6 +153,26 @@ div.bdayCard.permanentOut.hideClick::after {
     }
 }
 
+@keyframes sexyPopout{
+    0% {
+        transform: translate(-129px, -15px) scale(0.2) rotate(90deg);
+    }
+
+    50% {
+        z-index: 2;
+        transform: translate(-129px, -200px) scale(0.4) rotate(90deg);
+    }
+
+    51% {
+        z-index: 10;
+    }
+
+    100% {
+        z-index: 10;
+        transform: translate(-129px, 10%) rotate(0deg) scale(1);
+    }
+}
+
 @keyframes openCardFront{
     0% {
         z-index: 5;
@@ -190,6 +219,10 @@ div.bdayCard.permanentOut.hideClick::after {
 
 .popout {
     animation: popout 3s ease;
+}
+
+.sexy.popout {
+    animation: sexyPopout 3s ease;
 }
 
 .openCardFront {
