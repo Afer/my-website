@@ -1,12 +1,12 @@
 .envelopeBackground {
-    background: url(../images/full\ envelope.png);
+    background: url(../images/base/full\ envelope.png);
     width: 100%;
     height: 100%;
     z-index: 1;
 }
 
 .envelopeForeground {
-    background: url(../images/front_envelope.png);
+    background: url(../images/base/front_envelope.png);
     width: 100%;
     height: 100%;
     z-index: 3;
@@ -66,22 +66,53 @@ div.bdayCard.permanentOut.hideClick::after {
 }
 
 .card-front {
-    background-image: url(../images/sexy.png);
+    background-image: url(../images/base/flower-front-cover.png);
     z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-front-image {
+    background-image: url(../images/mothers-day/flower.jpg);
+    width: 50%;
+    height: 30%;
+    background-size: 100% auto;
+    opacity: 0.6
+}
+
+.mothers-day {
+    font-family: fantasy;
+    text-align: center;
+    font-size: 31px;
+    color: lightpink;
+    text-shadow: 2px 2px 3px black;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .card-inside-front{
-    background-image: url(../images/steevie_inside_left.png);
+    background-image: url(../images/base/soft-flower-bg.png);
     z-index: 3;
 }
 
 .card-inside-back {
-    background-image: url(../images/signed.png);
+    background-image: url(../images/base/signed.png);
     z-index: 1;
     text-align: center;
     font-family: cursive;
     font-size: 25px;
     line-height: 70px;
+}
+
+.card-inside-back.mothers-day {
+    line-height: 40px;
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 10px;
+    box-sizing: border-box;
 }
 
 #bdayContainer {
