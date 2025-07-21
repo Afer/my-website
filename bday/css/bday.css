@@ -1,3 +1,7 @@
+body {
+    background-color:lightsteelblue;
+}
+
 .envelopeBackground {
     background: url(../images/base/full\ envelope.png);
     width: 100%;
@@ -66,7 +70,7 @@ div.bdayCard.permanentOut.hideClick::after {
 }
 
 .card-front {
-    background-image: url(../images/base/flower-front-cover.png);
+    background-image: url(../images/front-funny.jpg);
     z-index: 5;
     display: flex;
     justify-content: center;
@@ -75,6 +79,7 @@ div.bdayCard.permanentOut.hideClick::after {
 }
 
 .card-front-image {
+    display: none;
     background-image: url(../images/mothers-day/flower.jpg);
     width: 50%;
     height: 30%;
@@ -99,12 +104,26 @@ div.bdayCard.permanentOut.hideClick::after {
 }
 
 .card-inside-back {
-    background-image: url(../images/base/signed.png);
+    background-image: url(../images/dog-funny.jpg);
     z-index: 1;
     text-align: center;
     font-family: cursive;
     font-size: 25px;
     line-height: 70px;
+    background-position: 0 -35px;
+}
+.card-inside-back::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: 50%;
+    background-image: url(../images/base/signed-yellower.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
 }
 
 .card-inside-back.mothers-day {
